@@ -1,0 +1,274 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Миллион в сетевом: партнёрам</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+/* Layout: дорожная карта партнёра, одна колонка 860px, остановки по времени, сообщения с кнопкой «Скопировать» */
+:root{
+  color-scheme: dark;
+  --bg:#04201A; --band:#062A21; --line:#0E3A2E;
+  --card:#08302A; --card-line:#14473A;
+  --gold:#F2C94C; --gold-soft:#F7D774; --gold-deep:#C8932B; --gold-bg:#2A2410;
+  --mint:#5FE3C8; --mint-bg:#0C3F33;
+  --fg:#EEF4F1; --muted:#B4C7BF; --dim:#8DA79D; --ink:#1B1404;
+  --display:Unbounded, "Arial Black", system-ui, sans-serif;
+  --body:Manrope, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:18px;line-height:1.55}
+h1,h2,h3{text-wrap:balance}
+p,li{text-wrap:pretty}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(18px, env(safe-area-inset-left, 0px));padding-right:max(18px, env(safe-area-inset-right, 0px))}
+.brand{padding-block:26px 0;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.03em;color:var(--mint)}
+
+.hero{padding-block:44px 36px;background:radial-gradient(600px 360px at 90% 0%,rgba(242,201,76,.22),transparent 70%)}
+.eyebrow{margin:0 0 14px;font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+h1{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(30px,5.4vw,54px);line-height:1.06;letter-spacing:-.01em;
+  background:linear-gradient(180deg,#FFF3CC,var(--gold) 55%,var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin:18px 0 0;font-size:20px;color:var(--muted);max-width:640px}
+.facts{margin-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px}
+.fact{background:var(--card);border:1px solid var(--card-line);border-radius:18px;padding:16px 18px}
+.fact b{display:block;font-family:var(--display);font-size:17px;color:var(--gold-soft)}
+.fact span{font-size:15px;color:var(--muted)}
+
+.idea{padding-block:36px;background:var(--band);border-block:1px solid var(--line)}
+.idea h2{margin:0 0 14px;font-family:var(--display);font-size:clamp(22px,3vw,28px)}
+.idea p{margin:0;color:var(--muted)}
+.idea p+p{margin-top:10px}
+.idea b{color:var(--fg)}
+
+.road{padding-block:44px 20px}
+.road>h2{margin:0 0 28px;font-family:var(--display);font-size:clamp(24px,3.2vw,32px)}
+.stop{position:relative;display:flex;gap:20px;padding-bottom:30px}
+.stop:not(:last-child)::before{content:"";position:absolute;left:25px;top:56px;bottom:0;width:2px;background:linear-gradient(var(--gold-deep),var(--line))}
+.dot{flex:none;width:52px;height:52px;border-radius:50%;background:var(--gold-bg);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:19px;color:var(--gold-soft)}
+.body{flex:1 1 auto;min-width:0}
+.when{display:inline-block;margin:0 0 6px;background:var(--mint-bg);color:var(--mint);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.stop h3{margin:0;font-family:var(--display);font-size:clamp(19px,2.5vw,24px);line-height:1.2}
+.stop p{margin:8px 0 0;color:var(--muted)}
+.stop ul{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.stop li+li{margin-top:4px}
+.stop b{color:var(--fg)}
+
+.msg{margin-top:14px;background:var(--card);border:1px solid var(--card-line);border-radius:18px;overflow:hidden}
+.msg-h{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px 10px 18px;border-bottom:1px solid var(--card-line)}
+.msg-h span{font-size:14px;font-weight:700;color:var(--dim)}
+.msg pre{margin:0;padding:16px 18px;white-space:pre-wrap;overflow-wrap:break-word;font-family:var(--body);font-size:17px;line-height:1.5;color:var(--fg)}
+.copy{flex:none;min-height:40px;border:0;border-radius:12px;padding:8px 16px;background:var(--gold);color:var(--ink);font-family:var(--body);font-weight:700;font-size:15px;cursor:pointer}
+.copy:hover{background:var(--gold-soft)}
+.copy:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
+.copy.ok{background:var(--mint);color:var(--ink)}
+.ph{color:var(--gold-soft);font-weight:700}
+
+.faq{padding-block:40px;background:var(--band);border-block:1px solid var(--line)}
+.faq h2{margin:0 0 20px;font-family:var(--display);font-size:clamp(22px,3vw,28px)}
+.faq dl{margin:0;display:grid;gap:12px}
+.faq div{background:var(--card);border-radius:16px;padding:16px 20px}
+.faq dt{font-weight:700}
+.faq dd{margin:6px 0 0;color:var(--muted)}
+
+.rules{padding-block:40px 80px}
+.rules h2{margin:0 0 16px;font-family:var(--display);font-size:clamp(22px,3vw,28px)}
+.rules ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.rules li{background:var(--card);border-left:3px solid var(--gold);border-radius:12px;padding:12px 16px;color:var(--muted)}
+.rules b{color:var(--fg)}
+
+@media (max-width:560px){
+  .stop{gap:14px}.dot{width:42px;height:42px;font-size:16px}.stop:not(:last-child)::before{left:20px;top:46px}
+  .msg-h{flex-wrap:wrap}
+}
+</style>
+
+<div class="wrap brand">HASH AI · Миллион долларов в сетевом</div>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Дорожная карта партнёра</p>
+    <h1>Зови людей в&nbsp;игру «$1000 за&nbsp;14&nbsp;дней»</h1>
+    <p class="sub">Твоя задача: пригласить людей в&nbsp;канал, привести на&nbsp;встречу и&nbsp;после неё помочь включиться. Всё по&nbsp;шагам, сообщения можно копировать.</p>
+    <div class="facts">
+      <div class="fact"><b>12 ноября, 14:00</b><span>Встреча-вебинар, МСК</span></div>
+      <div class="fact"><b>до 13 ноября</b><span>Закрываем приглашённых</span></div>
+      <div class="fact"><b>16–29 ноября</b><span>Игра и ежедневные отчёты</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="idea">
+  <div class="wrap">
+    <h2>Что мы&nbsp;делаем</h2>
+    <p>Канал <b>«Миллион долларов в&nbsp;сетевом»</b> объединяет партнёров HASH&nbsp;AI из&nbsp;разных компаний. Общая цель на&nbsp;2027 год: вместе сделать миллион долларов. Мы&nbsp;друг другу не&nbsp;конкуренты.</p>
+    <p>Первый шаг: игра <b>«$1000 за&nbsp;14&nbsp;дней»</b>. На&nbsp;встрече 12 ноября Анна Христюк и&nbsp;Максим Никитин покажут две связки: как продавать без блога и&nbsp;аудитории и&nbsp;как, когда база уже есть. Для участия достаточно <b>любого активного тарифа HASH&nbsp;AI</b>.</p>
+  </div>
+</section>
+
+<section class="road">
+  <div class="wrap">
+    <h2>Маршрут</h2>
+
+    <div class="stop">
+      <div class="dot">1</div>
+      <div class="body">
+        <p class="when">Сегодня</p>
+        <h3>Возьми свою ссылку на&nbsp;канал</h3>
+        <p>Напиши Максиму в&nbsp;Telegram: <b>@Nikitin_Maksim</b>. Ты&nbsp;получишь личную пригласительную ссылку. По&nbsp;ней видно, сколько людей пришло именно от&nbsp;тебя.</p>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="dot">2</div>
+      <div class="body">
+        <p class="when">Сегодня</p>
+        <h3>Составь список из&nbsp;20–30 человек</h3>
+        <ul>
+          <li>люди из&nbsp;сетевого, с&nbsp;кем ты&nbsp;уже общался</li>
+          <li>кто спрашивал про&nbsp;доход в&nbsp;интернете</li>
+          <li>партнёры, которые сейчас «стоят» и&nbsp;ищут движение</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="dot">3</div>
+      <div class="body">
+        <p class="when">10–12 ноября</p>
+        <h3>Напиши первое сообщение</h3>
+        <p>Выбери вариант, который звучит как&nbsp;ты. Цены в&nbsp;первом сообщении не&nbsp;называй.</p>
+
+        <div class="msg"><div class="msg-h"><span>Вариант 1. Знакомому</span><button class="copy" type="button">Скопировать</button></div>
+<pre>Привет! Мы с тобой общались про [тема]. Не могу тебя не позвать.
+Скажи, хочешь к Новому году заработать?
+
+Есть классная тема: сильные лидеры собирают движуху «$1000 за 14 дней». В четверг в 14:00 по Москве будет встреча, там всё расскажут и можно будет присоединиться.
+
+Интересно?</pre></div>
+
+        <div class="msg"><div class="msg-h"><span>Вариант 2. Коротко</span><button class="copy" type="button">Скопировать</button></div>
+<pre>Привет! Есть новости 🔥
+Партнёры HASH AI из разных компаний запускают игру «$1000 за 14 дней».
+
+Хочешь поучаствовать?</pre></div>
+
+        <div class="msg"><div class="msg-h"><span>Вариант 3. Через цель</span><button class="copy" type="button">Скопировать</button></div>
+<pre>Привет! Есть классные ребята, у них цель: миллион долларов в сетевом, и они запускают первую движуху «$1000 за 14 дней».
+
+Интересно тебе такое? Могу добавить в их канал, там всё расскажут. В четверг в 14:00 встреча.</pre></div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="dot">4</div>
+      <div class="body">
+        <p class="when">Ответили «интересно»</p>
+        <h3>Отправь ссылку на&nbsp;канал</h3>
+        <div class="msg"><div class="msg-h"><span>Сообщение</span><button class="copy" type="button">Скопировать</button></div>
+<pre>Отлично! Заходи в канал: [твоя ссылка]
+
+В четверг в 14:00 там появится ссылка на встречу. Включи уведомления, чтобы не пропустить 🔔</pre></div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="dot">5</div>
+      <div class="body">
+        <p class="when">12 ноября, 13:00</p>
+        <h3>Напомни за&nbsp;час</h3>
+        <p>Каждому из&nbsp;твоих приглашённых, в&nbsp;личку.</p>
+        <div class="msg"><div class="msg-h"><span>Напоминание</span><button class="copy" type="button">Скопировать</button></div>
+<pre>Привет! Напоминаю: через час, в 14:00, встреча про игру «$1000 за 14 дней». Ссылка будет в канале.
+
+Будешь?</pre></div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="dot">6</div>
+      <div class="body">
+        <p class="when">12 ноября, 14:00</p>
+        <h3>Будь на&nbsp;встрече сам</h3>
+        <ul>
+          <li>Пиши в&nbsp;чат, поддерживай: «огонь», «я&nbsp;в&nbsp;деле», плюсы на&nbsp;вопросы ведущих.</li>
+          <li>Отмечай, кто из&nbsp;твоих людей пришёл: им&nbsp;напишешь первыми.</li>
+          <li>Споры и&nbsp;сложные вопросы уводи в&nbsp;личку, чтобы не&nbsp;сбивать энергию.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="dot">7</div>
+      <div class="body">
+        <p class="when">Сразу после встречи</p>
+        <h3>Напиши каждому лично</h3>
+        <div class="msg"><div class="msg-h"><span>Был на встрече</span><button class="copy" type="button">Скопировать</button></div>
+<pre>Привет! Как тебе встреча? 🙌
+
+Хочешь с нами за ближайшие 14 дней заработать первую тысячу?</pre></div>
+        <div class="msg"><div class="msg-h"><span>Не пришёл</span><button class="copy" type="button">Скопировать</button></div>
+<pre>Привет! Сегодня была встреча про игру «$1000 за 14 дней», жаль, что тебя не было.
+
+Если интересно, расскажу коротко сам. Набрать тебя на 10 минут?</pre></div>
+        <p>Кто ещё не&nbsp;знает HASH&nbsp;AI, зови в&nbsp;тот же&nbsp;день на&nbsp;презентацию компании в&nbsp;<b>19:00 МСК</b>.</p>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="dot">8</div>
+      <div class="body">
+        <p class="when">Ответили «да»</p>
+        <h3>Регистрация и&nbsp;чат игры</h3>
+        <div class="msg"><div class="msg-h"><span>Сообщение</span><button class="copy" type="button">Скопировать</button></div>
+<pre>Супер! Вот моя ссылка на регистрацию в HASH AI: [твоя реф-ссылка]
+
+Регистрируйся, активируй любой тариф и напиши мне. Добавлю тебя в чат игры, там все условия.</pre></div>
+        <p>После активации добавь человека в&nbsp;чат «$1000 за&nbsp;14&nbsp;дней». С&nbsp;момента добавления у&nbsp;него <b>72 часа на&nbsp;подготовку и&nbsp;настройку</b>.</p>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="dot">9</div>
+      <div class="body">
+        <p class="when">16 ноября</p>
+        <h3>Старт игры</h3>
+        <p>С&nbsp;понедельника идут ежедневные отчёты. Кто закрылся в&nbsp;выходные, тоже успевает: главное подготовиться к&nbsp;старту.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2>Если спросят</h2>
+    <dl>
+      <div><dt>Почему канал «Миллион долларов в&nbsp;сетевом»?</dt><dd>Это общая цель партнёров на&nbsp;2027 год. Миллион складывается из&nbsp;первых тысяч, поэтому начинаем с&nbsp;$1000 за&nbsp;14&nbsp;дней.</dd></div>
+      <div><dt>Сколько стоит участие?</dt><dd>Нужен любой активный тариф HASH&nbsp;AI. Какой подойдёт именно тебе, разберём лично.</dd></div>
+      <div><dt>Я&nbsp;в&nbsp;другой компании. Это мне подходит?</dt><dd>Да. Партнёры из&nbsp;разных компаний, мы&nbsp;друг другу не&nbsp;конкуренты. HASH&nbsp;AI помогает с&nbsp;главным: где брать людей.</dd></div>
+      <div><dt>У&nbsp;меня нет блога и&nbsp;аудитории</dt><dd>Как раз об&nbsp;этом первая связка на&nbsp;встрече: как продавать без блога.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="rules">
+  <div class="wrap">
+    <h2>Три правила</h2>
+    <ul>
+      <li><b>Цены не&nbsp;в&nbsp;первом сообщении.</b> Сначала интерес, потом детали.</li>
+      <li><b>Каждому лично.</b> Не&nbsp;рассылка, а&nbsp;живое сообщение с&nbsp;именем.</li>
+      <li><b>Не&nbsp;обещай доход.</b> Говори «игра» и&nbsp;«цель», а&nbsp;не&nbsp;«гарантированно заработаешь».</li>
+    </ul>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var pre=btn.closest('.msg').querySelector('pre');
+    var text=pre.innerText;
+    function done(){btn.textContent='Скопировано';btn.classList.add('ok');setTimeout(function(){btn.textContent='Скопировать';btn.classList.remove('ok')},1800)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(pre);var s=window.getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(e){btn.textContent='Выделено: Ctrl+C'}}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,fallback)}else{fallback()}
+  });
+});
+</script>
+
+</body></html>
